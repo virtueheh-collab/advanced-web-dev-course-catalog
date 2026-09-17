@@ -1,3 +1,9 @@
 export default function Loading() {
-return <p>Loading course...</p>;
+return (
+    <main className="flex min-h-screen items-center justify-center">
+    <p className="text-lg text-gray-500">
+        Loading course...
+    </p>
+    </main>
+);
 }

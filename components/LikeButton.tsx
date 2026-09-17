@@ -1,16 +1,20 @@
 "use client";
-
 import { useState } from "react";
 
 type LikeButtonProps = {
 initialLikes: number;
 };
 
-export default function LikeButton({ initialLikes }: LikeButtonProps) {
+export default function LikeButton({
+initialLikes,
+}: LikeButtonProps) {
 const [likes, setLikes] = useState<number>(initialLikes);
 
 return (
-    <button onClick={() => setLikes(likes + 1)}>
+    <button
+    onClick={() => setLikes(likes + 1)}
+    className="rounded-lg border px-4 py-2 hover:bg-gray-100 transition"
+    >
     ❤ {likes}
     </button>
 );

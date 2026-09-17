@@ -1,16 +1,18 @@
 export default function About() {
 return (
-    <main>
-    <h1>About Course Catalog</h1>
+    <main className="max-w-3xl mx-auto p-8">
+    <h1 className="text-3xl font-bold mb-4">
+        About
+    </h1>
 
-    <p>
-        Our course catalog will help you in your learning journey by providing a 
-        curated list of courses that cover a wide range of topics in modern 
-        art of sleep deprivation.
+    <p className="text-gray-700 leading-7">
+        This project is a simple course catalog built with
+        Next.js, TypeScript, and Tailwind CSS.
     </p>
 
-    <p>
-        This project was built as part of a Advanced Web Technologies course.
+    <p className="text-gray-700 leading-7 mt-4">
+        It demonstrates the App Router, Server Components,
+        dynamic routes, loading states, and Client Components.
     </p>
     </main>
 );
